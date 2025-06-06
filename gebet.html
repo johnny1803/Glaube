@@ -106,4 +106,62 @@
   <blockquote>1. Korinter 14,5: „Ich möchte, dass ihr alle in Zungen redet, aber noch mehr, dass ihr weissagt.“</blockquote>
   
 </body>
+<head>
+  <meta charset="UTF-8" />
+  <title>Runder Home-Button</title>
+  <style>
+    /* ---------- Grundlayout ---------- */
+    body { margin: 0; height: 200vh; }          /* Demo: etwas Scroll-Fläche */
+    
+    /* ---------- Runder Button ---------- */
+    .home-btn {
+      position: fixed;            /* bleibt beim Scrollen sichtbar */
+      bottom: 20px;               /* Abstand vom unteren Fensterrand */
+      right: 20px;                /* Abstand vom rechten Rand       */
+      
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;         /* macht den Kreis */
+      
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      
+      background: #007bff;        /* Grundfarbe            */
+      color: #fff;                /* SVG wird mit currentColor gefüllt */
+      text-decoration: none;
+      
+      box-shadow: 0 2px 8px rgba(0,0,0,.25);
+      transition: background .2s, transform .2s;
+    }
+    .home-btn:hover {
+      background: #0056b3;
+      transform: scale(1.07);
+    }
+    
+    /* ---------- Optional: Tastatur-Fokus sichtbar machen ---------- */
+    .home-btn:focus-visible {
+      outline: 3px solid #ffd43b;
+      outline-offset: 2px;
+    }
+    
+    /* ---------- SVG im Button ---------- */
+    .home-btn svg {
+      width: 28px;
+      height: 28px;
+      fill: currentColor;         /* erbt die Textfarbe (#fff) */
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Runder Home-Button -->
+  <a href="index.html" class="home-btn" aria-label="Startseite">
+    <!-- Klassisches Haus-Symbol als Inline-SVG -->
+    <svg viewBox="0 0 24 24" aria-hidden="true">
+      <path d="M12 3l9 9-1.5 1.5L18 12.5V20h-5v-5h-2v5H6v-7.5L4.5 13.5 3 12l9-9z"/>
+    </svg>
+  </a>
+
+</body>
 </html>
