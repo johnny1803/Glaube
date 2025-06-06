@@ -13,7 +13,7 @@ Ich hoffe, dass diese Seite dabei hilft, bestimmte Aspekte des christlichen Glau
 
 ## 🌐 Website ansehen
 
-👉 [Hier klicken, um die Website zu öffnen](https://<dein-benutzername>.github.io/<dein-repository>/)
+👉 [Hier klicken, um die Website zu öffnen](https://<johnny1803>.github.io/<Glaube>/)
 
 > Ersetze `<dein-benutzername>` und `<dein-repository>` mit deinem GitHub-Nutzernamen und dem Repo-Namen.
 
